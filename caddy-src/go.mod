@@ -3,8 +3,11 @@ module caddy
 go 1.23.2
 
 require (
+	github.com/caddy-dns/desec v0.0.0-20240526070323-822a6a2014b2
+	github.com/caddy-dns/njalla v0.0.0-20221007081012-57869f89026a
 	github.com/caddyserver/caddy/v2 v2.8.4
 	github.com/greenpau/caddy-security v1.1.29
+	github.com/ueffel/caddy-brotli v1.5.0
 )
 
 require (
@@ -17,6 +20,7 @@ require (
 	github.com/Masterminds/sprig/v3 v3.2.3 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/alecthomas/chroma/v2 v2.13.0 // indirect
+	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/aryann/difflib v0.0.0-20210328193216-ff5ff6dc229b // indirect
 	github.com/beevik/etree v1.3.0 // indirect
@@ -78,7 +82,9 @@ require (
 	github.com/jonboulle/clockwork v0.4.0 // indirect
 	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
+	github.com/libdns/desec v0.2.4 // indirect
 	github.com/libdns/libdns v0.2.2 // indirect
+	github.com/libdns/njalla v0.0.0-20221007075422-a00222abbcb3 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
 	github.com/mattermost/xml-roundtrip-validator v0.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect

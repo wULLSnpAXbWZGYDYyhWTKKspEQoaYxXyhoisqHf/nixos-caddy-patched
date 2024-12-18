@@ -44,7 +44,7 @@
             inherit version;
             src = ./caddy-src;
             runVend = true;
-            vendorHash = "sha256-c9A0LabGN8gIq2pL/WP8wst3y0+8f72K015QZrX9yq4=";
+            vendorHash = "sha256-/jZsUePWoQJRtZiGi7MwuE/t6LDvOHAe7cK2m6S4M4o=";
             # vendorHash = pkgs.lib.fakeHash;
 
             meta = {
@@ -56,6 +56,7 @@
                 Br1ght0ne
                 emilylange
                 techknowlogick
+                wULLSnpAXbWZGYDYyhWTKKspEQoaYxXyhoisqHf
               ];
             };
           };
