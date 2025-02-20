@@ -47,6 +47,9 @@
             vendorHash = "sha256-lv0qzkZK7Xp54Ny2hYaMqE4ZVm11QqLAjOLvSckEPKg=";
             # vendorHash = pkgs.lib.fakeHash;
 
+            # XXX: PLEASE, THANK YOU.
+            CGO_ENABLED = 0;
+
             meta = {
               homepage = "https://caddyserver.com";
               description = "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS";
