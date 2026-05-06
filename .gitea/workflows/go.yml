@@ -1,0 +1,12 @@
+---
+on: [push]
+jobs:
+  govulncheck:
+    runs-on: golang-1.25
+    steps:
+      - run: apk add nodejs git
+      - uses: actions/checkout@v4
+      - run: go install -v golang.org/x/vuln/cmd/govulncheck@latest
+      - run: cd ./caddy-src && go build -v .
+      - run: cd ./caddy-src && govulncheck -show verbose,color ./...
+
