@@ -13,7 +13,7 @@
 
       # Generate a user-friendly version number.
       # version = builtins.substring 0 8 lastModifiedDate;
-      version = "v2.9.1";
+      version = "v2.10.1";
 
       # System types to support.
       supportedSystems = [
@@ -45,7 +45,7 @@
             inherit version;
             src = ./caddy-src;
             runVend = true;
-            vendorHash = "sha256-/CsUYXE9gHVQoUmpBHwBcANE9pTK0mQfrARX1obWUms=";
+            vendorHash = "sha256-0IHakxa9nGL8QuSGGwbVM6j3h1sgzq8zuNwV7y3pfhc=";
             # vendorHash = pkgs.lib.fakeHash;
 
             # XXX: PLEASE, THANK YOU.
