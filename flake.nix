@@ -2,7 +2,7 @@
   description = "Patched version of Caddy";
 
   # Nixpkgs / NixOS version to use.
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
 
   outputs =
     { self, nixpkgs }:
@@ -13,7 +13,7 @@
 
       # Generate a user-friendly version number.
       # version = builtins.substring 0 8 lastModifiedDate;
-      version = "v2.9.0-beta.3";
+      version = "v2.9.1";
 
       # System types to support.
       supportedSystems = [
@@ -45,11 +45,11 @@
             inherit version;
             src = ./caddy-src;
             runVend = true;
-            vendorHash = "sha256-5KE4XFQHk5F0pHwJGeHQrhhdc+WGSntF3jBG9rlzVAo=";
+            vendorHash = "sha256-/CsUYXE9gHVQoUmpBHwBcANE9pTK0mQfrARX1obWUms=";
             # vendorHash = pkgs.lib.fakeHash;
 
             # XXX: PLEASE, THANK YOU.
-            CGO_ENABLED = 0;
+            env.CGO_ENABLED = 0;
 
             meta = {
               homepage = "https://caddyserver.com";
